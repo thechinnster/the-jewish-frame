@@ -1,11 +1,11 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
+    title: `The Jewish Frame`,
     author: {
-      name: `Kyle Mathews`,
-      summary: `who lives and works in San Francisco building useful things.`,
+      name: `Ben Chinn`,
+      summary: `Co-host of The Jewish Frame`,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
+    description: `Home of The Jewish Frame podcast`,
     siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
     social: {
       twitter: `kylemathews`,
