@@ -6,7 +6,7 @@
  */
 
 import * as React from "react"
-import { useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql, Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 
 const Bio = () => {
@@ -46,7 +46,7 @@ const Bio = () => {
 
       {author?.name && (
         <p>
-          A movie podcast that reads film from a Jewish perpective.       
+          A movie podcast that reads film from a Jewish perpective. If you have any feedback or just want to get in touch, please <Link to="/contact-us">drop us a line.</Link>
         </p>
       )}
     </div>
