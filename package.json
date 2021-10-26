@@ -22,6 +22,7 @@
     "gatsby-remark-responsive-iframe": "^4.10.0",
     "gatsby-remark-smartypants": "^4.10.0",
     "gatsby-source-filesystem": "^3.13.0",
+    "gatsby-source-podcast-rss-feed": "^0.1.2",
     "gatsby-transformer-remark": "^4.10.0",
     "gatsby-transformer-sharp": "^3.13.0",
     "prismjs": "^1.25.0",

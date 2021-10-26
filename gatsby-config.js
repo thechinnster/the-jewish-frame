@@ -6,9 +6,10 @@ module.exports = {
       summary: `Co-host of The Jewish Frame`,
     },
     description: `Home of The Jewish Frame podcast`,
-    siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
+    siteUrl: `https://thejewishframepodcast.com`,
+    feed: `https://feeds.redcircle.com/c85eade0-82d1-4f51-85e0-ce327ce0f868`,
     social: {
-      twitter: `kylemathews`,
+      twitter: `thechinnster`,
     },
   },
   plugins: [
@@ -58,58 +59,13 @@ module.exports = {
     //   },
     // },
     {
-      resolve: `gatsby-plugin-feed`,
+      resolve: `gatsby-source-podcast-rss-feed`,
       options: {
-        query: `
-          {
-            site {
-              siteMetadata {
-                title
-                description
-                siteUrl
-                site_url: siteUrl
-              }
-            }
-          }
-        `,
-        feeds: [
-          {
-            serialize: ({ query: { site, allMarkdownRemark } }) => {
-              return allMarkdownRemark.nodes.map(node => {
-                return Object.assign({}, node.frontmatter, {
-                  description: node.excerpt,
-                  date: node.frontmatter.date,
-                  url: site.siteMetadata.siteUrl + node.fields.slug,
-                  guid: site.siteMetadata.siteUrl + node.fields.slug,
-                  custom_elements: [{ "content:encoded": node.html }],
-                })
-              })
-            },
-            query: `
-              {
-                allMarkdownRemark(
-                  sort: { order: DESC, fields: [frontmatter___date] },
-                ) {
-                  nodes {
-                    excerpt
-                    html
-                    fields {
-                      slug
-                    }
-                    frontmatter {
-                      title
-                      date
-                    }
-                  }
-                }
-              }
-            `,
-            output: "/rss.xml",
-          },
-        ],
-      },
+        feedURL: `https://feeds.redcircle.com/c85eade0-82d1-4f51-85e0-ce327ce0f868`,
+        id: 'guid',
+      }
     },
-    {
+      {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `Gatsby Starter Blog`,

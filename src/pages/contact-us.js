@@ -15,14 +15,14 @@ const ContactUsPage = ({ data, location }) => {
 
       <form className="pure-form pure-form-stacked" action="https://submit-form.com/79lHN8sU">
   <fieldset>
-      <label for="name">Name</label>
-    <input type="text" id="name" name="name"  required="required" />
+      <label htmlFor="name">Name</label>
+    <input type="text " id="name" name="name"  required="required" />
     </fieldset>
   <p>
-      <label for="email">Email</label>
+      <label htmlFor="email">Email</label>
       <input type="email" id="email" name="email"  required="required" />      
   </p>
-  <label for="message">Message</label>
+  <label htmlFor="message">Message</label>
   <textarea
     id="message"
     name="message"

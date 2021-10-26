@@ -4407,7 +4407,7 @@
   dependencies:
     "ansi-colors" "^4.1.1"
 
-"entities@^2.0.0":
+"entities@^2.0.0", "entities@^2.0.3":
   "integrity" "sha512-p92if5Nz619I0w+akJrLZH0MX0Pb5DX39XOwQTtXSdQQOaYH03S1uIQp4mhOZtAXrxq4ViO67YTiLBo2638o9A=="
   "resolved" "https://registry.npmjs.org/entities/-/entities-2.2.0.tgz"
   "version" "2.2.0"
@@ -5683,6 +5683,13 @@
     "progress" "^2.0.3"
     "valid-url" "^1.0.9"
     "xstate" "^4.14.0"
+
+"gatsby-source-podcast-rss-feed@^0.1.2":
+  "integrity" "sha512-OhuHWyeTT5Qb7DpJOA5lwYQ/KpNkDK6Cbdcoh98VHrAq/ZLs76cDRMm/SA+V/rhq1pS4tF9dPiWhDofLJr0IDw=="
+  "resolved" "https://registry.npmjs.org/gatsby-source-podcast-rss-feed/-/gatsby-source-podcast-rss-feed-0.1.2.tgz"
+  "version" "0.1.2"
+  dependencies:
+    "rss-parser" "^3.7.6"
 
 "gatsby-telemetry@^2.13.0":
   "integrity" "sha512-PN9kKbZd0i2QkoVvHyCa3VjuRVIvBwjXTyZHwL+se5yrbYufZQXoyMiMMXFV48FvxMgE53ON1U2vtzeRvE8U2w=="
@@ -10323,6 +10330,14 @@
   dependencies:
     "glob" "^7.1.3"
 
+"rss-parser@^3.7.6":
+  "integrity" "sha512-aqD3E8iavcCdkhVxNDIdg1nkBI17jgqF+9OqPS1orwNaOgySdpvq6B+DoONLhzjzwV8mWg37sb60e4bmLK117A=="
+  "resolved" "https://registry.npmjs.org/rss-parser/-/rss-parser-3.12.0.tgz"
+  "version" "3.12.0"
+  dependencies:
+    "entities" "^2.0.3"
+    "xml2js" "^0.4.19"
+
 "rss@^1.2.2":
   "integrity" "sha1-UKFpiHYTgTOnT5oF0r3I240nqSE="
   "resolved" "https://registry.npmjs.org/rss/-/rss-1.2.2.tgz"
@@ -12411,7 +12426,7 @@
   "resolved" "https://registry.npmjs.org/xml/-/xml-1.0.1.tgz"
   "version" "1.0.1"
 
-"xml2js@^0.4.5":
+"xml2js@^0.4.19", "xml2js@^0.4.5":
   "integrity" "sha512-ySPiMjM0+pLDftHgXY4By0uswI3SPKLDw/i3UXbnO8M/p28zqexCUoPmQFrYD+/1BzhGJSs2i1ERWKJAtiLrug=="
   "resolved" "https://registry.npmjs.org/xml2js/-/xml2js-0.4.23.tgz"
   "version" "0.4.23"
