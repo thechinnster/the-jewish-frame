@@ -14,7 +14,12 @@ const ContactUsPage = ({ data, location }) => {
       <p>We'd love to hear from you. Drop us a line using the form below.</p>
 
       <form className="pure-form pure-form-stacked" action="https://submit-form.com/79lHN8sU">
-  <fieldset>
+      <input
+    type="hidden"
+    name="_redirect"
+    value="https://thejewishframepodcast.com/thanks"
+  />
+   <fieldset>
       <label htmlFor="name">Name</label>
     <input type="text " id="name" name="name"  required="required" />
     </fieldset>
