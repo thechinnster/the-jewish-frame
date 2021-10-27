@@ -37,14 +37,6 @@ const Seo = ({ description, lang, meta, title }) => {
       }}
       title={title}
       titleTemplate={defaultTitle ? `%s | ${defaultTitle}` : null}
-      link={[
-        {
-        rel: `alternate`,
-        type: `application/rss+xml`,
-        title: `The Jewish Frame`,
-        href: `https://feeds.redcircle.com/c85eade0-82d1-4f51-85e0-ce327ce0f868`,
-      }
-      ]}
       meta={[
         {
           name: `description`,
