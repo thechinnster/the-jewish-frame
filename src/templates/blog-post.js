@@ -4,6 +4,8 @@ import { Link, graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
+import AudioPlayer from 'react-h5-audio-player';
+import 'react-h5-audio-player/lib/styles.css';
 
 const BlogPostTemplate = ({ data, location }) => {
   const post = data.markdownRemark
@@ -29,9 +31,10 @@ const BlogPostTemplate = ({ data, location }) => {
           dangerouslySetInnerHTML={{ __html: post.html }}
           itemProp="articleBody"
         />
-    
+        <AudioPlayer src={post.frontmatter.audio} />
+
       </article>
-    
+
       <nav className="blog-post-nav">
         <ul
           style={{
@@ -83,6 +86,7 @@ export const pageQuery = graphql`
         title
         date(formatString: "MMMM DD, YYYY")
         description
+        audio
       }
     }
     previous: markdownRemark(id: { eq: $previousPostId }) {
