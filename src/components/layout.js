@@ -25,7 +25,10 @@ const Layout = ({ location, title, children }) => {
       <header className="global-header">{header}</header>
       <main>{children}</main>
       <footer>
-        <Link to="/contact-us">Contact</Link>  |  © The Jewish Frame {new Date().getFullYear()}
+        <p><Link to="/contact-us">Contact</Link>  |  © The Jewish Frame {new Date().getFullYear()}</p>
+        <p>
+          The Jewish Frame is recorded at <a href="https://www.bethsholomsf.org/">Congregation Beth Sholom in San Francisco</a>.  
+        </p>
       </footer>
     </div>
   )
