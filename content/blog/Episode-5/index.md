@@ -1,6 +1,6 @@
 ---
 title: "Episode 5: A.I. Artificial Intelligence"
-date: "2021-12-026T08:00:00"
+date: "2021-12-26T08:00:00"
 description: We discuss the 2001 Steven Spielberg film, <em>A.I. Artificial Intelligence</em>
 audio: "https://stream.redcircle.com/episodes/2fabb3bb-2aed-4880-bfd8-30387f54ccc9/stream.mp3"
 ---
