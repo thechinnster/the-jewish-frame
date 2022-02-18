@@ -1,6 +1,6 @@
 ---
 title: "Episode 6: Inglourious Basterds"
-date: "2021-2-17T08:00:00"
+date: "2021-02-17T08:00:00"
 description: We discuss the 2009 Quentin Tarantino film, Inglourious Basterds. </em>
 audio: "https://stream.redcircle.com/episodes/4227839d-daf8-4db4-8fc9-430b8cf2f8ec/stream.mp3"
 ---
