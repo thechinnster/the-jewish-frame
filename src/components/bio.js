@@ -42,8 +42,7 @@ const Bio = () => {
       {author?.name && (
         <div>
         <p>
-          A movie podcast that reads film from a Jewish perpective. If you have any feedback or just want to get in touch, please <Link to="/contact-us">drop us a line.</Link>
-        </p>
+          A movie podcast that reads film from a Jewish perpective.</p>
         <p>
           Subscribe now on <Link to="https://podcasts.apple.com/us/podcast/the-jewish-frame/id1591644061">Apple Podcasts</Link>, or <Link to="https://open.spotify.com/show/4IVaDVI26MgTw8zFjx5YRd">Spotify</Link>, or just search for The Jewish Frame wherever you listen.
         </p>

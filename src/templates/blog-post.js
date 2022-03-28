@@ -35,6 +35,10 @@ const BlogPostTemplate = ({ data, location }) => {
         <h4>Full Audio</h4>
         <AudioPlayer src={post.frontmatter.audio} />
 
+        <p className="blog-post-submessage">
+          Subscribe now on <Link to="https://podcasts.apple.com/us/podcast/the-jewish-frame/id1591644061">Apple Podcasts</Link>, or <Link to="https://open.spotify.com/show/4IVaDVI26MgTw8zFjx5YRd">Spotify</Link>, or just search for The Jewish Frame wherever you listen.
+        </p>
+
       </article>
 
       <nav className="blog-post-nav">
