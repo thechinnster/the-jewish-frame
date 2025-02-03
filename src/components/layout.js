@@ -25,7 +25,7 @@ const Layout = ({ location, title, children }) => {
       <header className="global-header">{header}</header>
       <main>{children}</main>
       <footer>
-        <p>Find us on <Link to="https://twitter.com/thejewishframe">Twitter</Link>&nbsp; |  
+        <p><Link to="https://twitter.com/thejewishframe">Find us on X</Link>&nbsp; |  
         © The Jewish Frame {new Date().getFullYear()}</p>
       </footer>
     </div>
